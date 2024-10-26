@@ -40,14 +40,14 @@ const DimentionsControls = ({
         <input
           name="width"
           max={30}
-          value={canvasDimentions.width}
+          value={canvasDimentions.width || ''}
           {...inputDefaultProps}
         />
         <span className="font-bold mx-2">&times;</span>
         <input
           name="height"
           max={70}
-          value={canvasDimentions.height}
+          value={canvasDimentions.height || ''}
           {...inputDefaultProps}
         />
         {isDisabled && (
